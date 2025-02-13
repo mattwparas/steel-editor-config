@@ -1,0 +1,13 @@
+[package]
+name = "steel-editorconfig"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "steel_editorconfig"
+crate-type = ["rlib", "cdylib"]
+
+[dependencies]
+steel-core = { version = "0.6.0", git = "https://github.com/mattwparas/steel.git", features = ["dylibs", "sync"] }
+abi_stable = "0.11.1"
+ec4rs = "1.1.1"
