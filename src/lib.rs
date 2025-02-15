@@ -25,7 +25,7 @@ fn editor_config_module() -> FFIModule {
 
     module
         .register_fn("get-property", EditorConfig::get_property)
-        .register_fn("config-at-path", editor_config_at_path)
+        .register_fn("config-at-path", editor_config_at_path);
 
     module
 }
